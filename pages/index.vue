@@ -1,13 +1,17 @@
 <template>
 
 
-<div class="">
-<div class="">
+
+<div class="page">
   <NavBar/>
-</div>
-<div class="">
-  <Card/>
-</div>
+
+  <b-container class="bv-example-row">
+  <b-row>
+    <b-col><Card/></b-col>
+    <b-col><Card/></b-col>
+    <b-col><Card/></b-col>
+  </b-row>
+</b-container>
 
 </div>
 
