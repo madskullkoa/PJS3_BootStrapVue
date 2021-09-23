@@ -7,7 +7,7 @@
 
   <b-container class="bv-example-row">
   <b-row>
-    <b-col><Card/></b-col>
+    <b-col><b-spinner class="m-5" label="Busy"><Card/></b-spinner></b-col>
     <b-col><Card/></b-col>
     <b-col><Card/></b-col>
   </b-row>
