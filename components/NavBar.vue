@@ -1,7 +1,7 @@
 <template id="">
   <b-navbar toggleable="lg" type="dark" class="sticky">
     <b-container>
-    <b-navbar-brand href="#" >
+    <b-navbar-brand href="#">
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
     </b-navbar-brand>
 
@@ -55,7 +55,11 @@
 .font {
   font-family: 'Bebas Neue', cursive;
   font-family: 'Poppins', sans-serif;
-  color: white;
   margin-top: 1rem;
 }
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    justify-content: space-around
+}
+
 </style>
