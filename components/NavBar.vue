@@ -26,7 +26,6 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
           <template #button-content>
             <em>User</em>
           </template>
