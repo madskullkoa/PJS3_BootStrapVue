@@ -21,6 +21,7 @@
   export default {}
 </script>
 <style>
+
   body {
  background-image: url("https://www.oui.sncf/assets/media/2019-08/istock-fabrice-cabaud.jpg");
 }

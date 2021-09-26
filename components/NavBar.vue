@@ -1,7 +1,7 @@
 <template id="">
-  <div>
-  <b-navbar toggleable="lg" type="dark">
-    <b-navbar-brand href="#" class="ml-5">
+  <b-navbar toggleable="lg" type="dark" class="sticky">
+    <b-container>
+    <b-navbar-brand href="#" >
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
     </b-navbar-brand>
 
@@ -9,23 +9,25 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#" class="nav-hover">Accueil</b-nav-item>
-        <b-nav-item href="#" class="nav-hover">Municipalité</b-nav-item>
-        <b-nav-item href="#" class="nav-hover">Services Municipaux</b-nav-item>
-        <b-nav-item href="#" class="nav-hover">Activités et Découvertes</b-nav-item>
-        <b-nav-item href="#" class="nav-hover">Contact</b-nav-item>
-        <b-nav-item href="#" class="nav-hover">Facebook</b-nav-item>
+        <b-nav-item href="#" class="nav-hover font">ACCUEIL</b-nav-item>
+        <b-nav-item href="#" class="nav-hover font">MUNICIPALITÉ</b-nav-item>
+        <b-nav-item href="#" class="nav-hover font">SERVICES MUNICIPAUX</b-nav-item>
+        <b-nav-item href="#" class="nav-hover font">ACTIVITÉS ET DÉCOUVERTES</b-nav-item>
+        <b-nav-item href="#" class="nav-hover font">CONTACT</b-nav-item>
+        <b-nav-item href="#" class="nav-hover font">FACEBOOK</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
-
+  </b-container>
   </b-navbar>
-</div>
 </template>
 
 <script type="text/javascript">
 </script>
 
 <style media="screen">
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;600&display=swap');
+
   li {
     margin-bottom: 10px;
 }
@@ -48,5 +50,12 @@
 .nav-hover:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+.font {
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-top: 1rem;
 }
 </style>
