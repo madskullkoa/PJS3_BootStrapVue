@@ -1,23 +1,18 @@
 <template>
  <div id="app">
    <div ref="elevatorup" class="elevator-button">
-     <svg
-       class="sweet-svg"
-       xmlns="http://www.w3.org/2000/svg"
-       xmlns:xlink="http://www.w3.org/1999/xlink"
-       version="1.1"
-       x="0px"
-       y="0px"
-       viewBox="0 0 100 100"
-       enable-background="new 0 0 100 100"
-       xml:space="preserve"
-       height="100px"
-       width="100px"
-     >
-       <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z" />
-       <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z" />
-     </svg>
-     <span class="goto-top">{{ word }}</span>
+     
+  <svg aria-hidden="true"
+    focusable="false"
+    data-prefix="fas"
+    data-icon="arrow-circle-up"
+    class="svg-inline--fa fa-arrow-circle-up fa-w-16" 
+    role="img" xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 512 512">
+    <path fill="currentColor"
+    d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z">
+    </path>
+    </svg>
    </div>
  </div>
 </template>
@@ -26,15 +21,10 @@
 import ElevatorUp from 'elevator.js'
 export default {
  props: {
-   word: {
-     type: String,
-     required: false,
-     default: 'Go to Top'
-   },
    duration: {
      type: Number,
      required: false,
-     default: 4000
+     default: 2000
    },
    mainAudio: {
      type: String,
@@ -57,16 +47,12 @@ export default {
  },
  methods: {
    elevatorUp () {
-     // console.log(this);
      this.elevator = new ElevatorUp({
        element: this.$refs.elevatorup,
        duration: this.duration,
-       // targetElement: document.querySelector('#elevator-target'),
-       // verticalPadding: 100,  // in pixels
        mainAudio: this.mainAudio,
        endAudio: this.endAudio
      })
-     // this.elevator.elevate();
    }
  }
 }
@@ -74,15 +60,14 @@ export default {
 
 <style scoped>
 .elevator-button svg {
- width: 40px;
- height: 40px;
+ width: 70px;
+ height: 70px;
  display: block;
  margin: auto;
- margin-bottom: 5px;
+ margin-bottom: 15px;
  cursor: pointer;
-}
-.goto-top{
-   color:green;
-   transition: cubic-bezier(1,1,1,0.1);
+ position: relative;
+ right: -46%;
+ color: red;
 }
 </style>

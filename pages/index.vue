@@ -1,4 +1,14 @@
+<script>
+import { Vue } from 'vue'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
+
+</script>
+
 <template>
+
 <body>
   <div id="full-size">
   <NavBar/>
@@ -28,8 +38,11 @@
   <ScrollTop/>
 <Footer/>
 </div>
+
 </body>
+  
 </template>
+
 
 <script>
 import NuxtLogoVue from '../components/NuxtLogo.vue'
