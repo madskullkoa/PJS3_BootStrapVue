@@ -24,17 +24,7 @@ export default {
    duration: {
      type: Number,
      required: false,
-     default: 2000
-   },
-   mainAudio: {
-     type: String,
-     required: false,
-     default: 'http://tholman.com/elevator.js/music/elevator.mp3'
-   },
-   endAudio: {
-     type: String,
-     required: false,
-     default: 'http://tholman.com/elevator.js/music/ding.mp3'
+     default: 1000
    }
  },
  data () {
@@ -50,8 +40,6 @@ export default {
      this.elevator = new ElevatorUp({
        element: this.$refs.elevatorup,
        duration: this.duration,
-       mainAudio: this.mainAudio,
-       endAudio: this.endAudio
      })
    }
  }
