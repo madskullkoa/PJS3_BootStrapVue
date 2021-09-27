@@ -25,6 +25,7 @@
     <b-col><Card/></b-col>
   </b-row>
   </b-container>
+  <ScrollTop/>
 <Footer/>
 </div>
 </body>
@@ -53,6 +54,18 @@ import NuxtLogoVue from '../components/NuxtLogo.vue'
     }
   }
 </script>
+
+<script>
+import ScrollTop from '../components/ScrollTop'
+export default {
+ components: {
+   ScrollTop
+
+ }
+
+}
+</script>
+
 <style>
 
 html,body{ margin:0; padding:0; height:100%; width:100%; }

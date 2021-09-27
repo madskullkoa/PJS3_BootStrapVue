@@ -26,7 +26,6 @@
         <div class="clearfix"></div>
       </div>
     </footer>
-  </div>
 </template>
 
 <style>
