@@ -1,5 +1,5 @@
 <template id="">
-  <b-navbar toggleable="lg" type="dark" class="sticky">
+  <b-navbar toggleable="lg" type="dark" class="sticky" fixed="top">
     <b-container>
     <b-navbar-brand href="#">
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
