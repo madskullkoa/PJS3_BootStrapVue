@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'PJS3_BootStrapVue',
+    title: 'Commune d\'Île-de-Bréhat',
     htmlAttrs: {
       lang: 'en'
     },
@@ -29,6 +29,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

@@ -8,10 +8,10 @@ Vue.use(BootstrapVueIcons)
 </script>
 
 <template>
-
 <body>
   <div id="full-size">
   <NavBar/>
+  <ScrollToTopBtn/>
   
   <b-container class="bv-example-row">
   <b-row>
@@ -35,7 +35,7 @@ Vue.use(BootstrapVueIcons)
     <b-col><Card/></b-col>
   </b-row>
   </b-container>
-  <ScrollTop/>
+  
 <Footer/>
 </div>
 
@@ -47,6 +47,7 @@ Vue.use(BootstrapVueIcons)
 <script>
 import NuxtLogoVue from '../components/NuxtLogo.vue'
   export default {
+  components: { ScrollToTopBtn, Testbtt },
     data() {
       return {
         title: 'Commune d\'Île-de-Bréhat'
@@ -69,11 +70,10 @@ import NuxtLogoVue from '../components/NuxtLogo.vue'
 </script>
 
 <script>
-import ScrollTop from '../components/ScrollTop'
+import ScrollToTopBtn from '../components/ScrollToTopBtn.vue'
 export default {
  components: {
-   ScrollTop
-
+   ScrollToTopBtn
  }
 
 }
