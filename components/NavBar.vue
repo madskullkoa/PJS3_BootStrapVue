@@ -2,7 +2,9 @@
   <b-navbar toggleable="lg" type="dark" class="sticky" fixed="top">
     <b-container>
     <b-navbar-brand href="#">
-      <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
+      <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem;
+      height: auto;
+      background-color: #197bbd;">
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -31,11 +33,11 @@
   li {
     margin-bottom: 10px;
 }
-
 .nav-hover {
     display: inline-block;
     color: white;
     text-decoration: none;
+    background-color: rgba(25, 123, 189, 1);
 }
 
 .nav-hover::after {
@@ -43,7 +45,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: white;
+    background: black;
     transition: width .3s;
 }
 
