@@ -10,7 +10,7 @@
     class="mb-2"
   >
   <b-card-text>
-      <i class="fas fa-arrow-circle-up"></i>Some quick example text to build on the card title and make up the bulk of the card's content.
+      Some quick example text to build on the card title and make up the bulk of the card's content.
     </b-card-text>
 
     <b-button href="#" variant="primary">Go somewhere</b-button>

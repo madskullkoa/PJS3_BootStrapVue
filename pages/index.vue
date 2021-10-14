@@ -1,19 +1,12 @@
-<script>
-import { Vue } from 'vue'
-import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
-
-Vue.use(BootstrapVue)
-Vue.use(BootstrapVueIcons)
-
-</script>
-
 <template>
 <body>
   <div id="full-size">
+    
   <NavBar/>
   <ScrollToTopBtn/>
   
   <b-container class="bv-example-row">
+    <Carousel/>
   <b-row>
     <b-col class="m-10"><Card/></b-col>
     <b-col><Card/></b-col>
@@ -35,7 +28,7 @@ Vue.use(BootstrapVueIcons)
     <b-col><Card/></b-col>
   </b-row>
   </b-container>
-  
+  <b-container><Embed/></b-container>
 <Footer/>
 </div>
 
@@ -45,9 +38,8 @@ Vue.use(BootstrapVueIcons)
 
 
 <script>
-import NuxtLogoVue from '../components/NuxtLogo.vue'
   export default {
-  components: { ScrollToTopBtn, Testbtt },
+  components: { ScrollToTopBtn, Testbtt, Carousel },
     data() {
       return {
         title: 'Commune d\'Île-de-Bréhat'
@@ -57,7 +49,6 @@ import NuxtLogoVue from '../components/NuxtLogo.vue'
       return {
         title: this.title,
         meta: [
-          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
           {
             hid: 'description',
             name: 'description',
@@ -71,11 +62,11 @@ import NuxtLogoVue from '../components/NuxtLogo.vue'
 
 <script>
 import ScrollToTopBtn from '../components/ScrollToTopBtn.vue'
+import Carousel from '../components/Carousel.vue'
 export default {
  components: {
    ScrollToTopBtn
  }
-
 }
 </script>
 
@@ -85,7 +76,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 #full-size{
   height:100%;
   width:100%;
-  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  overflow:hidden;
 }
 
 body {
