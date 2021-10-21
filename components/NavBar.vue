@@ -1,5 +1,5 @@
 <template id="">
-  <b-navbar toggleable="lg" type="dark" class="sticky">
+  <b-navbar toggleable="lg" type="dark" class="sticky" fixed="top" style="justify-content: space-around; width:100" >
     <b-container>
     <b-navbar-brand href="#">
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
@@ -7,8 +7,8 @@
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
+    <b-collapse id="nav-collapse" style="justify-content: space-around" is-nav>
+      <b-navbar-nav style="margin-right: 3em">
         <b-nav-item href="#" class="nav-hover font">ACCUEIL</b-nav-item>
         <b-nav-item href="#" class="nav-hover font">MUNICIPALITÉ</b-nav-item>
         <b-nav-item href="#" class="nav-hover font">SERVICES MUNICIPAUX</b-nav-item>
@@ -22,6 +22,15 @@
 </template>
 
 <script type="text/javascript">
+</script>
+
+<script>
+import { ref } from 'vue';
+export default {
+  props: {},
+  setup() {
+    },
+};
 </script>
 
 <style media="screen">
@@ -56,10 +65,14 @@
   font-family: 'Bebas Neue', cursive;
   font-family: 'Poppins', sans-serif;
   margin-top: 1rem;
+  margin-right: 1em;
 }
 
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
     justify-content: space-around
 }
 
+.change_color {
+  background-color: red;
+}
 </style>

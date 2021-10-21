@@ -26,11 +26,6 @@
       </b-carousel-slide>
 
     </b-carousel>
-
-    <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
-    </p>
   </div>
 </template>
 
@@ -55,7 +50,7 @@
 
 <style>
 .dims{
-width: 1024px;
-height: auto;
+width: 100%;
+height: 100%;
 }
 </style>
