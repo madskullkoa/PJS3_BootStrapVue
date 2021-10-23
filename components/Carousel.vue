@@ -16,13 +16,13 @@
       
     >
 
-      <b-carousel-slide img-src="https://i.picsum.photos/id/871/1024/480.jpg?hmac=L152ncbh1idw0TYR7sDxYVditH_sHgzbKqpnwQec8vU">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52">
       </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://i.picsum.photos/id/574/1024/480.jpg?hmac=NuAPCmTV3C1FGzGf62l_9iZD_01kmiwd9u9hUhSgbxM">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
       </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://i.picsum.photos/id/588/1024/480.jpg?hmac=P5YW92km4DsLCLsv77a5SBh4YZO6HyePc17kvrLKCr4">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58">
       </b-carousel-slide>
 
     </b-carousel>
