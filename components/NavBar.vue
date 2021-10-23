@@ -1,5 +1,9 @@
 <template id="">
+<<<<<<< HEAD
   <b-navbar toggleable="lg" type="dark" class="sticky horizontal-line" fixed="top" style="background-color: #61000f; justify-content: space-around; width:100" >
+=======
+  <b-navbar toggleable="lg" type="dark" class="sticky" fixed="top" style="justify-content: space-around; width:100" >
+>>>>>>> parent of 15f59eb (navbar color scroll try)
     <b-container>
     <b-navbar-brand href="#">
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
@@ -21,31 +25,16 @@
   </b-navbar>
 </template>
 
-<script>
-export default {
-    setup() {
+<script type="text/javascript">
+</script>
 
+<script>
+import { ref } from 'vue';
+export default {
+  props: {},
+  setup() {
     },
-    data() {
-        return {
-            isTop: true
-        }
-    },
-    beforeMount () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-    beforeDestroy () {
-        window.removeEventListener('scroll', this.handleScroll);
-    },
-    methods: {
-        top(){
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        },  
-        handleScroll (event) {
-            this.isTop = window.scrollY < 15;
-        }
-    }
-} 
+};
 </script>
 
 <style media="screen">
@@ -87,7 +76,7 @@ export default {
     justify-content: space-around
 }
 
-.isTop {
+.change_color {
   background-color: red;
 }
 
