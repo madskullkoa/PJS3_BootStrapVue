@@ -1,5 +1,5 @@
 <template id="">
-  <b-navbar :class="{'isTop': this.isTop}" toggleable="lg" type="dark" class="sticky" fixed="top" style="justify-content: space-around; width:100" >
+  <b-navbar toggleable="lg" type="dark" class="sticky horizontal-line" fixed="top" style="background-color: navy; justify-content: space-around; width:100" >
     <b-container>
     <b-navbar-brand href="#">
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
@@ -26,25 +26,6 @@ export default {
     setup() {
 
     },
-    data() {
-        return {
-            isTop: true
-        }
-    },
-    beforeMount () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-    beforeDestroy () {
-        window.removeEventListener('scroll', this.handleScroll);
-    },
-    methods: {
-        top(){
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        },  
-        handleScroll (event) {
-            this.isTop = window.scrollY < 15;
-        }
-    }
 } 
 </script>
 
@@ -87,7 +68,7 @@ export default {
     justify-content: space-around
 }
 
-.isTop {
-  background-color: red;
+.horizontal-line {
+  border-bottom: 2px solid black;
 }
 </style>
