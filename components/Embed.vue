@@ -1,11 +1,13 @@
 <template>
-    <b-embed
-        class="dims"
-        type="iframe"
-        aspect="16by9"
-        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-        allowfullscreen
-    ></b-embed>
+  <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/8lYS7yPmO5g" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+  ></iframe>
 </template>
  
  <style scoped>
