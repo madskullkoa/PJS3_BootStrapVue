@@ -16,8 +16,29 @@
               <b-img
                 src="https://images-eu.ssl-images-amazon.com/images/I/41wkG24yDkL.png"
                 class="img-form1"
+                style="margin-left: 1em;"
               ></b-img>
-              <span style="font-size: 20px">Météo</span>
+              <div class="patterns">
+              <svg width="100%" height="100%">
+                <defs>
+                  <style>
+                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                  </style>
+                </defs>
+
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#polka-dots)"
+                ></rect>
+
+                <text x="40%" y="60%" text-anchor="middle" style="font-size:30px">
+                  Météo
+                </text>
+              </svg>
+            </div>
             </div>
 
             <div>
@@ -55,8 +76,29 @@
                 flex
                 alt="Responsive image"
                 class="img-form2"
+                style="margin-left: 2em;"
               ></b-img>
-              <span style="font-size: 20px">News</span>
+              <div class="patterns">
+              <svg width="100%" height="100%">
+                <defs>
+                  <style>
+                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                  </style>
+                </defs>
+
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#polka-dots)"
+                ></rect>
+
+                <text x="40%" y="60%" text-anchor="middle" style="font-size:30px">
+                  Météo
+                </text>
+              </svg>
+            </div>
             </div>
 
             <div style="display: flex; flex-direction: column;">
@@ -156,7 +198,7 @@
             </div>
             <br />
             <div style="display: flex; justify-content: space-around;">
-              <Card />
+              <Card img-src="https://i.picsum.photos/id/389/1024/480.jpg?hmac=LT_CS6C6B0Zp4Sixvz9cWxr-lRp0Fjc9moU3dUgIcpA"/>
               <Card />
               <Card />
             </div>
@@ -302,7 +344,7 @@ body {
 svg text {
   font-family: Lora;
   letter-spacing: 10px;
-  stroke: #ffa5d8;
+  stroke: #0f0303;
   font-size: 70px;
   font-weight: 700;
   stroke-width: 3;
@@ -314,7 +356,7 @@ svg text {
   0% {
     stroke-dasharray: 0 50%;
     stroke-dashoffset: 20%;
-    fill: hsl(189, 68%, 75%);
+    fill: hsl(189, 82%, 22%);
   }
 
   100% {
