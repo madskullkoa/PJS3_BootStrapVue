@@ -23,6 +23,15 @@
             <div>
               <b-img
                 src="https://www.google.com/maps/vt/data=RHTX4ZY6NeRMNNyO7CVFX9T79Ah-fNC1_eHNrIGLQaPq7sswuxmYDu0WE7rPR_-UrEOVR_XAg8G8eVrNduxPSK03jvnHXNhah17eLPrP0imZrdRbLWT3isFeepbBGhve-zRu7oZ1xcwzv_hSW3ArkNaZRfASlwBSmJ1JAa4X-tzmC-Z5sTj-YgIjFeIaF__a7brlMPVg93QM5JVT8R_2ul3rW5gzuln7-Gg8ixVdofXlbw"
+                style="border-radius: 10px; width: 250px; margin-bottom: 5px;"
+                fluid
+                alt="Responsive image"
+              ></b-img>
+            </div>
+
+            <div>
+              <b-img
+                src="../weather.PNG"
                 style="border-radius: 10px; width: 250px;"
                 fluid
                 alt="Responsive image"
@@ -71,20 +80,45 @@
 
         <b-row>
           <b-col
-            style="background-color: red; color: #fefee2; font-family: 'Poppins', sans-serif;"
+            style="background-color: red; color: #fefee2; font-family: 'Zen Maru Gothic', sans-serif;"
             class="vertical-line"
           >
-            <h2>
-              <b><u>Histoire de l’île: </u></b>
-            </h2>
-            <br /><br />
-            <h4>
-              Du paléolithique à nos jours, découvrez l’histoire de l’île de
-              Bréhat, premier port de la baie de Saint Brieuc jusqu’à la fin du
-              XVIIIème siècle, premier site classé de France en 1907.
-            </h4>
-            <br />
+            <div class="patterns">
+              <svg width="100%" height="100%">
+                <defs>
+                  <style>
+                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                  </style>
+                </defs>
+
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#polka-dots)"
+                ></rect>
+
+                <text x="50%" y="70%" text-anchor="middle">
+                  Histoire
+                </text>
+              </svg>
+            </div>
+            <div class="wrapper" style="margin-bottom: 3px;">
+              <div class="typing-demo1">
+                Du paléolithique à nos jours,
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="typing-demo2">
+                découvrez l’histoire de l’île de
+                Bréhat, premier port de la baie de Saint Brieuc jusqu’à la fin
+                du XVIIIème siècle, premier site classé de France en 1907.
+              </div>
+            </div>
+            <br>
             <v-btn
+              href="https://fr.wikipedia.org/wiki/%C3%8Ele-de-Br%C3%A9hat" target="_blank"
               elevation="2"
               style="float: right; background-color: #fefee2;"
               >En savoir plus</v-btn
@@ -99,11 +133,27 @@
             style="background-color: #fefee2; font-family: 'Poppins', sans-serif;"
             class="vertical-line"
           >
-            <h2
-              style="text-align: center; color: red; margin-top: 20px; margin-bottom: 20px; "
-            >
-              <b><u>DERNIERS ARTICLES </u></b>
-            </h2>
+            <div class="patterns">
+              <svg width="100%" height="100%">
+                <defs>
+                  <style>
+                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                  </style>
+                </defs>
+
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#polka-dots)"
+                ></rect>
+
+                <text x="50%" y="70%" text-anchor="middle" style="font-size:55px">
+                  DERNIERS ARTICLES
+                </text>
+              </svg>
+            </div>
             <br />
             <div style="display: flex; justify-content: space-around;">
               <Card />
@@ -191,6 +241,8 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap");
+
 html,
 body {
   margin: 0;
@@ -241,5 +293,73 @@ body {
   width: 30px;
   height: auto;
   margin: 0.8em 0.8em 0.8em 0.8em;
+}
+
+.patterns {
+  height: 10vh;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #ffa5d8;
+  font-size: 70px;
+  font-weight: 700;
+  stroke-width: 3;
+
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(189, 68%, 75%);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo1 {
+  width: 29ch;
+  animation: typing 3s steps(29), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.typing-demo2 {
+  width: 154ch;
+  animation: typing 10s steps(154), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 </style>
