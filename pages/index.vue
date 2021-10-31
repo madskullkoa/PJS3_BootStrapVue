@@ -95,7 +95,7 @@
                 ></rect>
 
                 <text x="40%" y="60%" text-anchor="middle" style="font-size:30px">
-                  Météo
+                  News
                 </text>
               </svg>
             </div>
@@ -160,7 +160,7 @@
             </div>
             <br>
             <v-btn
-              href="https://fr.wikipedia.org/wiki/%C3%8Ele-de-Br%C3%A9hat" target="_blank"
+              href="https://fr.wikipedia.org/wiki/%C3%8Ele-de-Br%C3%A9hat#Histoire" target="_blank"
               elevation="2"
               style="float: right; background-color: #fefee2;"
               >En savoir plus</v-btn
@@ -198,9 +198,9 @@
             </div>
             <br />
             <div style="display: flex; justify-content: space-around;">
-              <Card img-src="https://i.picsum.photos/id/389/1024/480.jpg?hmac=LT_CS6C6B0Zp4Sixvz9cWxr-lRp0Fjc9moU3dUgIcpA"/>
-              <Card />
-              <Card />
+              <Card1 />
+              <Card2 />
+              <Card3 />
             </div>
           </b-col>
 
@@ -374,23 +374,24 @@ svg text {
 }
 
 .typing-demo1 {
-  width: 29ch;
-  animation: typing 3s steps(29), blink 0.5s step-end infinite alternate;
+  width: 12.5ch;
+  animation: typing 3s steps(40), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
-  font-size: 1em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.4em;
 }
 
 .typing-demo2 {
-  width: 154ch;
-  animation: typing 10s steps(154), blink 0.5s step-end infinite alternate;
+  animation-delay: 3s;
+  width: 64.4ch;
+  animation: typing 10s steps(150), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
-  font-size: 1em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.4em;
 }
 
 @keyframes typing {
