@@ -1,5 +1,5 @@
 # PJS3_BootStrapVue
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4ae318cf-bf0d-4874-9898-090bfdc81aff/deploy-status)](https://app.netlify.com/sites/pjs3/deploys)
 ## Build Setup
 
 ```bash
