@@ -34,7 +34,7 @@
                   fill="url(#polka-dots)"
                 ></rect>
 
-                <text x="40%" y="60%" text-anchor="middle" style="font-size:30px">
+                <text x="40%" y="60%" text-anchor="middle" style="font-size:25px">
                   Météo
                 </text>
               </svg>
@@ -94,7 +94,7 @@
                   fill="url(#polka-dots)"
                 ></rect>
 
-                <text x="40%" y="60%" text-anchor="middle" style="font-size:30px">
+                <text x="40%" y="60%" text-anchor="middle" style="font-size:25px">
                   News
                 </text>
               </svg>
@@ -146,17 +146,10 @@
                 </text>
               </svg>
             </div>
-            <div class="wrapper" style="margin-bottom: 3px;">
-              <div class="typing-demo1">
-                Du paléolithique à nos jours,
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="typing-demo2">
-                découvrez l’histoire de l’île de
+            <div style="margin-bottom: 3px; margin-top: 5px; text-align: center;">
+                Du paléolithique à nos jours, découvrez l’histoire de l’île de
                 Bréhat, premier port de la baie de Saint Brieuc jusqu’à la fin
                 du XVIIIème siècle, premier site classé de France en 1907.
-              </div>
             </div>
             <br>
             <v-btn
