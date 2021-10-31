@@ -11,7 +11,7 @@
         <b-row>
           <b-col class="section1a vertical-line">
             <div
-              style="background-color: red; margin-bottom: 2rem; border-radius: 25px 30px 0 25px; width: 75%; display: flex; flex-direction: row; align-items: center; justify-content: center;"
+              style="background-color: #CD5C5C; margin-bottom: 2rem; border-radius: 25px 30px 0 25px; width: 75%; display: flex; flex-direction: row; align-items: center; justify-content: center;"
             >
               <b-img
                 src="https://images-eu.ssl-images-amazon.com/images/I/41wkG24yDkL.png"
@@ -62,14 +62,14 @@
 
           <b-col
             class="section1b vertical-line"
-            style="background-color: #fefee2; padding: 20px 0 20px 0;"
+            style="background-color: #f7fafc; padding: 20px 0 20px 0;"
           >
             <Carousel />
           </b-col>
 
           <b-col class="section1a">
-            <div
-              style="background-color: red; margin-bottom: 2rem; border-radius: 25px 30px 0 25px; width: 75%; display: flex; flex-direction: row; align-items: center; justify-content: center;"
+            <div id="div"
+              style="background-color: #CD5C5C; margin-bottom: 2rem; border-radius: 25px 30px 0 25px; width: 75%; display: flex; flex-direction: row; align-items: center; justify-content: center;"
             >
               <b-img
                 src="https://cdn.pixabay.com/photo/2012/04/01/17/40/paper-23700_960_720.png"
@@ -122,7 +122,7 @@
 
         <b-row>
           <b-col
-            style="background-color: red; color: #fefee2; font-family: 'Zen Maru Gothic', sans-serif;"
+            style="background-color: #CD5C5C; color: #f7fafc; font-family: 'Zen Maru Gothic', sans-serif;"
             class="vertical-line"
           >
             <div class="patterns">
@@ -162,7 +162,7 @@
             <v-btn
               href="https://fr.wikipedia.org/wiki/%C3%8Ele-de-Br%C3%A9hat#Histoire" target="_blank"
               elevation="2"
-              style="float: right; background-color: #fefee2;"
+              style="float: right; background-color: #f7fafc;"
               >En savoir plus</v-btn
             >
           </b-col>
@@ -172,7 +172,7 @@
 
         <b-row>
           <b-col
-            style="background-color: #fefee2; font-family: 'Poppins', sans-serif;"
+            style="background-color: #f7fafc; font-family: 'Poppins', sans-serif;"
             class="vertical-line"
           >
             <div class="patterns">
@@ -210,7 +210,7 @@
         <b-row>
           <b-col
             class="vertical-line"
-            style="display: flex; justify-content: space-around; flex-direction: row; align-items: center; background-color: red;"
+            style="display: flex; justify-content: space-around; flex-direction: row; align-items: center; background-color: #CD5C5C;"
           >
             <Embed />
 
@@ -244,7 +244,7 @@
         </b-row>
         <b-row>
           <b-col
-            style="background-color: #fefee2; height: 250px"
+            style="background-color: #f7fafc; height: 250px"
             class="vertical-line"
           >
           </b-col>
@@ -314,7 +314,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   justify-content: center;
-  background-color: #fefee2;
+  background-color: #f7fafc;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -322,7 +322,7 @@ body {
 }
 
 .vertical-line {
-  border-right: 3px solid red;
+  border-right: 3px solid #CD5C5C;
 }
 
 .img-form1 {

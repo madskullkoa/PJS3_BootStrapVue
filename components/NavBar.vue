@@ -1,5 +1,5 @@
 <template id="">
-  <b-navbar toggleable="lg" type="dark" class="sticky horizontal-line" fixed="top" style="background-color: red; justify-content: space-around; width:100" >
+  <b-navbar toggleable="lg" type="dark" class="sticky horizontal-line" fixed="top" style="background-color: #CD5C5C; justify-content: space-around; width:100" >
     <b-container>
     <b-navbar-brand href="#">
       <img src=https://www.iledebrehat.fr/wp-content/uploads/2021/01/logo-brehat-test7.png class="d-inline-block align-top" alt="Logo" style="width: 15rem; height: auto;">
@@ -69,6 +69,6 @@ export default {
 }
 
 .horizontal-line {
-  border-bottom: 3px solid darkred;
+  border-bottom: 3px solid dark#CD5C5C;
 }
 </style>
